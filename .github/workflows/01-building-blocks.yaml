@@ -14,7 +14,7 @@ jobs:
       - name: say-hello
         run: echo "hello world"
   echo-goodbye:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     steps:
       - name: Successful step
         run: |
