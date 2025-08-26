@@ -1,0 +1,25 @@
+name: 01 - Building Blocks
+on:
+  push:
+    branch: 
+      - main
+  pull_request:
+    branch:
+      - main:
+
+jobs:
+  echo-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say-hello
+        run: echo "hello world"
+  echo-goodbye:
+    runs-on: ubuntu-lates
+    steps:
+      - name: Successful step
+        run: |
+          echo "I will succeed"
+          exit 1
+      - name: Say goodbye
+        run: echo "Goodbye!"
+
